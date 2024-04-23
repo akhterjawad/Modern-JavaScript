@@ -75,21 +75,60 @@
 
 // console.log("hello number method");
 
-let a ='66';
-let num = Number(a)
-console.log(num);
-console.log(num+10);
+// let a ='66';
+// let num = Number(a)
+// console.log(num);
+// console.log(num+10);
 
 
-let b = true;
-// b= false
-let num1 = Number(b)
-console.log(num1);
-document.write(num1,'<br>')
-console.log(num1+1);
+// let b = true;
+// // b= false
+// let num1 = Number(b)
+// console.log(num1);
+// document.write(num1,'<br>')
+// console.log(num1+1);
 
 
-let c = "99 88";
-let num2 = Number(c);
-console.log(num2);
-document.write(num2);
+// let c = "99 88";
+// let num2 = Number(c);
+// console.log(num2);
+// document.write(num2,'<br>');
+
+
+// let d = "99 88";
+// let num3 = parseInt(d);
+// console.log(num3);
+// document.write(num3);
+
+
+// console.log("hello Math method");
+
+
+let e = Math.ceil(2.35)
+console.log(e);
+let f = Math.ceil(2.90)
+console.log(f);
+
+
+let g = Math.floor(2.35)
+console.log(g);
+let h = Math.floor(2.90)
+console.log(h);
+
+
+let i = Math.round(2.35)
+console.log(i);
+let j = Math.round(2.90)
+console.log(j);
+let l = Math.round(2.49)// (.50) ka bad upper digit pa convert hota ha
+console.log(l);
+
+
+let m = Math.trunc(2.90)
+console.log(m);
+
+
+let n = Math.random()*10;
+console.log(n);
+let o = Math.random()*2;
+console.log(o);
