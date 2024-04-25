@@ -36,12 +36,12 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 
 
 
-let message = "Ali and Sami are best and friends. They play cricket Ali and Sami and football Ali and Sami together abdullah abdullah Ali Ali.";
+// let message = "Ali and Sami are best and friends. They play cricket Ali and Sami and football Ali and Sami together abdullah abdullah Ali Ali.";
 
 // console.log(message[message.length - 1]);// is tarika sa hum string ka last letter ko ma loom karsakta ha
 
 
-console.log(message.replace('Ali' , 'ABDULLAH'));//is sa string ma pahli value ko dusri value sa change krdata ha sirf paihly lafz ko
+// console.log(message.replace('Ali' , 'ABDULLAH'));//is sa string ma pahli value ko dusri value sa change krdata ha sirf paihly lafz ko
 // console.log(message.replaceAll('Ali' , 'ABDULLAH'));// is ma bhi replace ki tarha kam hota ha bs ya sara words ko change krdata ha jo braket ma ho 
 
 
@@ -123,8 +123,14 @@ console.log(message.replace('Ali' , 'ABDULLAH'));//is sa string ma pahli value k
 // let u = 100
 // let u = 100.42
 // let u = '100'
-let num5 = Number.isInteger(q)//is ma integer ma batata ha yani baghair point (.)ka baghir decimal ka , ka jo aap na value likhi ha wo integer hi hana
-console.log(num5);
+// let num5 = Number.isInteger(q)//is ma integer ma batata ha yani baghair point (.)ka baghir decimal ka , ka jo aap na value likhi ha wo integer hi hana
+// console.log(num5);
+
+
+// let v = 22.854864920;
+// let num6 = v.toFixed(24)
+// let num6 = v.toFixed(2)//is ma pori value ati ha bs point (.) ka bad utna hi digit ata ha jitna hum () ma dalta ha 
+// console.log(num6);
 
 
 
