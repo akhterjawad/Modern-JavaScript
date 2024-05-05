@@ -166,3 +166,51 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 // console.log(o);
 // let p = Math.floor(Math.random()*2)
 // console.log(p);
+
+
+
+
+// let currentDate = new Date();
+// console.log(currentDate.toLocaleTimeString())
+// let dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// console.log(currentDate.getDay());
+// console.log(dayNames[currentDate.getDay()]);
+// console.log(currentDate.getDate());
+// console.log(currentDate.getHours());
+// console.log(currentDate.getHours());
+// console.log(currentDate.getMinutes());
+// console.log(currentDate.getSeconds());
+// console.log(currentDate.getMilliseconds());
+// console.log(currentDate.getTime());
+
+// const birthDate = new Date('November 27, 2003');
+// console.log(birthDate.getTime());
+
+
+
+
+// const hyderabadi = new Date('May 26 , 2004').getTime();
+// const currentDate = new Date().getTime();
+// const remainingMilliseconds = currentDate - hyderabadi;
+
+// console.log(remainingMilliseconds / 1000 / 60 / 60 /24 / 30 / 12);
+
+
+
+
+
+// let currentDate = new Date("May 26, 2004 07:25:00");
+// ;
+// // let setYear = currentDate.setMonth(6)
+// // console.log(setYear);
+// console.log(currentDate);
+
+
+
+// const date = document.querySelector('#date');
+
+// function getDateFromInput (){
+//     console.log(date.value);
+//     const currentDate = new Date(date.value);
+//     console.log(currentDate);
+// }
