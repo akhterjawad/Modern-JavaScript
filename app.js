@@ -214,3 +214,66 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 //     const currentDate = new Date(date.value);
 //     console.log(currentDate);
 // }
+
+
+
+
+// console.log('hellow obj');
+
+// let array = {
+//     username: 'jawad',
+//     age: '19',
+//     address: 'malir'
+//     // isLoggedIn: false,
+// }
+// //object ma jo chez left ma likhi hoti ha jaisa username wo hoti ha property or jo right pa likhi hoti ha wo ha value jo string ma likha hui ha 
+
+// console.log(array);//is tarha ham pura object ko console me show karwa sakta ha
+// console.log(array.username);//is tarha hum object ka username ko console me show karwa sakta ha
+// delete array.age// is tarha hum obj ma sa koi bhi chez delete krsakta ha
+// array.email = 'haseeburrehman'// is tarha hum obj ma sa koi bhi chez reasign krsakta ha
+
+
+// let obj = {
+//     firstnames: 'jawad',
+//     lastnames: 'jawad',
+//     age: '10,',
+//     email: 'akterjawad566@gmail.com',
+// }
+// delete obj.age
+// obj.email = 'haseeburrehman'
+// console.log(obj);
+
+
+// let ahmed = {
+//     firstnames: 'jawad',
+//     lastnames: 'jawad',
+//     age: '10,',
+//     email: 'akterjawad566@gmail.com'
+// }
+// for (let key in ahmed) {
+//     console.log(key);//is tarha object kisirf properties ko get krsakta ha
+// }
+
+// let haseeb = {
+//     firstnames: 'jawad',
+//     lastnames: 'jawad',
+//     age: '10,',
+//     email: 'akterjawad566@gmail.com'
+// }
+// for (let key in haseeb) {
+//     console.log(key + ':' + haseeb[key]);//is tarha object ki properties , value ko get krsakta ha
+// }
+
+
+let hasnain = {
+    firstnames: 'jawad',
+    lastnames: 'jawad',
+    age: '10,',
+    email: 'akterjawad566@gmail.com',
+    hobbies: ['car', 'food', 'travel']//is karha nested object banta ha
+}
+console.log(hasnain.hobbies);
+console.log(hasnain.hobbies[2]);
+
+
