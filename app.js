@@ -266,14 +266,41 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 // }
 
 
-let hasnain = {
-    firstnames: 'jawad',
-    lastnames: 'jawad',
-    age: '10,',
-    email: 'akterjawad566@gmail.com',
-    hobbies: ['car', 'food', 'travel']//is karha nested object banta ha
-}
-console.log(hasnain.hobbies);
-console.log(hasnain.hobbies[2]);
+// let hasnain = {
+//     firstnames: 'jawad',
+//     lastnames: 'akhter',
+//     age: '10,',
+//     email: 'akterjawad566@gmail.com',
+//     hobbies: ['car', 'food', 'travel'],//is karha nested object banta ha
+// salary:function() {
+//     return 20000
+// }
+// }
+// console.log(hasnain.salary());
+// console.log(hasnain.hobbies);
+// console.log(hasnain.hobbies[2]);
+
+// let jawad = {
+//     firstnames: 'jawad',
+//     lastnames: 'akhter',
+//     fullname :function () {
+//         return this.firstnames +''+ this.lastnames;
+//     }
+// }
+
+// console.log(jawad.fullname());
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
