@@ -56,6 +56,7 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 // console.log(username.split('a'));
 // console.log(username.length - 1);
 // console.log(username[username.length - 1]);
+// console.log('hellow'.concat(' world'));
 
 
 
@@ -168,6 +169,26 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 // console.log(p);
 
 
+// console.log('hellow time');
+
+//jub hama koi bhi chez specific time ma run karani ho to us ka lia hum use krta ha setInterval 
+
+// isma 2 argument hota ha paihly ma wo value dalta ha jo jo kamkarwana ho or dosra ma time jaisa 1000 mili second dala hua ha mana
+
+// let a = 0;
+// let id = setInterval(anim, 1000);
+// function anim() {
+
+//     if (a == 10) {
+//         clearInterval(id)
+//     } else {
+    
+//         console.log(a = a + 1);
+//     }
+// }
+
+// console.log('hellow date & time');
+
 
 
 // let currentDate = new Date();
@@ -218,7 +239,7 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 
 
 
-// console.log('hellow obj');
+// console.log('hellow object');
 
 // let array = {
 //     username: 'jawad',
@@ -226,7 +247,7 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 //     address: 'malir'
 //     // isLoggedIn: false,
 // }
-// //object ma jo chez left ma likhi hoti ha jaisa username wo hoti ha property or jo right pa likhi hoti ha wo ha value jo string ma likha hui ha 
+// //object ma jo chez left ma likhi hoti ha jaisa username wo hoti ha property or jo right pa likhi hoti ha wo ha value jo string ma likha hui ha
 
 // console.log(array);//is tarha ham pura object ko console me show karwa sakta ha
 // console.log(array.username);//is tarha hum object ka username ko console me show karwa sakta ha
@@ -291,6 +312,20 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 // console.log(jawad.fullname());
 
 
+
+// const username = document.querySelector('#name');
+// const age = document.querySelector('#age');
+// const city = document.querySelector('#city');
+// const email = document.querySelector('#email');
+// function getValue(){
+//     const obj = {
+//         name: username.value,
+//         email: email.value,
+//         city: city.value,
+//         age: age.value
+//     }
+//     console.log(obj);
+// }
 
 
 
