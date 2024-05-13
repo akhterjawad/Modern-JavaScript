@@ -1,13 +1,14 @@
 // console.log("hello string method");
 
-// toLowerCase
-// toUpperCase
-// length
-// charAt
-// indexOf
-// slice
-// replace
-// replaceall
+// toLowerCase  book ma haga
+// toUpperCase  book ma haga
+// length  book ma haga
+// charAt  book ma haga
+// indexOf  book ma haga
+// lastindexof  book ma haga
+// slice  book ma haga
+// replace  book ma haga
+// replaceall  book ma haga
 // split
 
 
@@ -52,6 +53,8 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 // console.log(username[4]);
 // console.log(username.charAt(4));
 // console.log(username.indexOf('x'));
+// console.log(username.indexOf('A'));
+// console.log(username.indexOf('a'));
 // console.log(username.lastIndexOf('h'));
 // console.log(username.split('a'));
 // console.log(username.length - 1);
@@ -76,8 +79,20 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 
 // console.log("hello number method");
 
+// Number // book ma haga
+// parseInt() // book ma haga
+// parseFloat() // book ma haga
+// toString() // book ma haga
+// toFixed() // book ma haga
+// isfinite()
+// isinteger()
+
+
+
+
 // let a ='66';
-// let num = Number(a)
+// let num = +a // is tarha hum 1 string ko number ma convert carta ha
+// num = Number(a) // is tarha bhi hum 1 string ko number ma convert carta ha
 // console.log(num);
 // console.log(num+10);
 
@@ -101,7 +116,7 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 // let d = "years 89";
 // let d = "89.47";
 // let d = "089";// browzer pa bilawaja ka yani jo bilkul start ma laga hua ho wo zero show nahi hota Q ka us zero ki koi value nahi hoti
-// let num3 = parseInt(d);
+// let num3 = parseInt(d);//parseInt ka method ma ('99 88') is tarha ki yani jub digits ka bich ma space ho to ya start vali value data ha magar simple number method ma nahi data or jub hum is ka bitch ka space khatam krdanga ('9988') to ya puri value return kraga or basicly ya integer return krta ha yani point sa paihly vali 
 // let num3 = Number(d);//100
 // console.log(num3);
 // document.write(num3);
@@ -134,10 +149,31 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 // console.log(num6);
 
 
+// let b = 234-true;
+// let num1 = b.toString()
+// console.log(num1);
+// // document.write(num1,'<br>')
+// console.log(num1+1);
+
+
 
 // console.log("hello Math method");
 
-// let e = Math.ceil(2.35)
+
+// ceil()  book ma ha
+// floor()  book ma ha
+// round()  book ma ha
+// random()  book ma ha
+// trunc()
+
+
+
+// ceil ma value point ma ho to us value ka integer ma'1+' krdaga or point ka bad ki value nahi daga
+// floor ma value point ma ho to us value ka integer ma kuch nahi krdaga or point ka bad ki value nahi daga
+
+
+
+// let e = Math.ceil(2.01)
 // console.log(e);
 // let f = Math.ceil(2.90)
 // console.log(f);
@@ -184,14 +220,36 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 //     } else {
     
 //         console.log(a = a + 1);
+// console.log(a += + 1);
 //     }
 // }
+
+//jis tar ha setintervel hota ha is tarha settimeout bhi hota ha magar firq sirf itna ha dono ma ka settimeout 1 dafa chalta ha or setinterval jub tk chalta ha jub tk usko  na roko. settimeout ko rokna ka lia cleartimeout use krta ha
 
 // console.log('hellow date & time');
 
 
 
-// let currentDate = new Date();
+let currentDateTime = new Date();
+console.log(currentDateTime);//is tarika sa hum computer ka current day,date,time,time zone ko pata laga saktaha
+
+// let currentDate = new Date(' January 10 2030');
+// let currentDate = new Date(' January 10 2010');
+// console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsakta ha
+
+// let currentDate = new Date().toDateString();
+// console.log(currentDate);//is tarika sa hum curret day or date maloom karsakta ha
+
+// let currentDateYear = new Date().getFullYear();
+// console.log(currentDateYear);//is tarika sa hum curret Year maloom karsakta ha
+
+// let currentDateMonth = new Date().getMonth();
+// console.log(currentDateMonth);//is tarika sa hum curret Month ko digit ma maloom karsakta ha magar ya manth ko 0 sa count karna shuru karta ha jaisa array ma index number start hota ha 
+
+
+
+
+
 // console.log(currentDate.toLocaleTimeString())
 // let dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 // console.log(currentDate.getDay());
