@@ -387,6 +387,11 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 
 
 
+console.log('hello Deep Dom!');
+
+
+
+
 console.log('hello Events!');
 //onclick
 //onchange
