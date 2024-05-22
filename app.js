@@ -371,26 +371,28 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 
 
 
-// const username = document.querySelector('#name');
-// const age = document.querySelector('#age');
-// const city = document.querySelector('#city');
-// const email = document.querySelector('#email');
-// function getValue(){
-//     const obj = {
-//         name: username.value,
-//         email: email.value,
-//         city: city.value,
-//         age: age.value
-//     }
-//     console.log(obj);
-// }
+const username = document.querySelector('#name');
+const age = document.querySelector('#age');
+const city = document.querySelector('#city');
+const email = document.querySelector('#email');
+function getValue(){
+    const obj = {
+        name: username.value,
+        email: email.value,
+        city: city.value,
+        age: age.value
+    }
+    console.log(obj);
+}
 
 
 
 console.log('hello Deep Dom!');
 
+// Dom ma jo (.parentElement) wo parent ko get karta ha or jo (.parentNode) hota ha usma bhi yahi hota ha magar jis chiz pa aap (.parentNode) or us ka koi parent na ho jaisa HTML ka tag to wo kuch na kuch lazmi return karta ha magar (.parentElement) null return karta ha
 
 
+//
 
 console.log('hello Events!');
 //onclick
