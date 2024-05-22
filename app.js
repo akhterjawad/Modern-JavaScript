@@ -401,9 +401,35 @@ function hello(){
 
 const btn = document.querySelector('#btn');
 
-// btn.addEventListener('click' , hello);//jo kam hum HTML ma on click ka throw karaha tha wohi kam hum JavaScript ma addEventListener ka throw karta ha or on click bad practice ha ,addEventListener ma 2 parameter receive hota ha first ma string ma click ya submit or second ma function ka sirf nam ya phir pura function banado
+// btn.addEventListener('click' , hello);//jo kam hum HTML ma on click ka throw karaha tha wohi kam hum JavaScript ma addEventListener ka throw karta ha or on click bad practice ha ,addEventListener ma 3 parameter receive hota ha 3 bad ma dakhanga first ma string ma click ya submit or second ma function ka sirf nam ya phir pura function banado or third parameter ma sirf boolean hota ha or by default false hota ha
 
 
 btn.addEventListener('click' , function(){
     console.log('hello world!')
 })
+
+
+// bubbling
+// capturing
+// bubbling ma ya hota ha ka jub aap ksi div ka ander div bana o or dono ka ander alag alag functuality dalo or jub aap ander wala div pa click karo to uper wala bhi kam kra. ya bubbling kahlati ha
+
+// capturing ma hum isi chiz ko apna hisab sa change kardata ha
+
+
+const ul = document.querySelector('#ul');
+const about = document.querySelector('#about');
+
+ul.addEventListener('click', function () {
+    console.log('ul clicked')
+}, false)
+
+about.addEventListener('click', function () {
+    console.log('about clicked')
+} , false)
+
+// stopPropagation ka method sa hum ksi bhi chiz ka default behaviour ko change karsakta ha
+
+// about.addEventListener('click', function (event) {
+//     event.stopPropagation();
+//     console.log('about clicked')
+// } , false)
