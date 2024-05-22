@@ -39,7 +39,7 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 
 // let message = "Ali and Sami are best and friends. They play cricket Ali and Sami and football Ali and Sami together abdullah abdullah Ali Ali.";
 
-// console.log(message[message.length - 1]);// is tarika sa hum string ka last letter ko ma loom karsakta ha
+// console.log(message[message.length - 1]);// is tarika sa hum string ka last letter ko maloom karsakta ha
 
 
 // console.log(message.replace('Ali' , 'ABDULLAH'));//is sa string ma pahli value ko dusri value sa change krdata ha sirf paihly lafz ko
@@ -173,7 +173,7 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 
 
 
-// let e = Math.ceil(2.01)
+let e = Math.ceil(2.021837)
 // console.log(e);
 // let f = Math.ceil(2.90)
 // console.log(f);
@@ -233,9 +233,9 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 let currentDateTime = new Date();
 console.log(currentDateTime);//is tarika sa hum computer ka current day,date,time,time zone ko pata laga saktaha
 
-// let currentDate = new Date(' January 10 2030');
+let currentDate = new Date('10/2/2024');
 // let currentDate = new Date(' January 10 2010');
-// console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsakta ha
+console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsakta ha
 
 // let currentDate = new Date().toDateString();
 // console.log(currentDate);//is tarika sa hum curret day or date maloom karsakta ha
@@ -331,7 +331,7 @@ console.log(currentDateTime);//is tarika sa hum computer ka current day,date,tim
 //     email: 'akterjawad566@gmail.com'
 // }
 // for (let key in ahmed) {
-//     console.log(key);//is tarha object kisirf properties ko get krsakta ha
+//     console.log(key);//is tarha object ki sirf properties ko get krsakta ha
 // }
 
 // let haseeb = {
@@ -387,13 +387,23 @@ console.log(currentDateTime);//is tarika sa hum computer ka current day,date,tim
 
 
 
+console.log('hello Events!');
+//onclick
+//onchange
+//onmouseover
+//onmouseout
+//onsubmit
+
+function hello(){
+    console.log('hello world');
+}
 
 
+const btn = document.querySelector('#btn');
+
+// btn.addEventListener('click' , hello);//jo kam hum HTML ma on click ka throw karaha tha wohi kam hum JavaScript ma addEventListener ka throw karta ha or on click bad practice ha ,addEventListener ma 2 parameter receive hota ha first ma string ma click ya submit or second ma function ka sirf nam ya phir pura function banado
 
 
-
-
-
-
-
-
+btn.addEventListener('click' , function(){
+    console.log('hello world!')
+})
