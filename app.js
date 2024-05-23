@@ -471,3 +471,51 @@ ul1.addEventListener('click', function (event) {
     }
 
 })
+
+
+//onchange
+
+// const input = document.querySelector('#input');
+// input.addEventListener('change' , function(){
+//     console.log('onchange event')
+// })
+
+
+//onmouseover
+// const input = document.querySelector('#input');
+// input.addEventListener('mouseover' , function(){
+//     console.log('mouseover')
+// })
+
+
+// //onmouseout
+// input.addEventListener('mouseout' , function(){
+//     console.log('mouseout')
+// })
+
+
+// const image = document.querySelector('#image');
+
+// image.addEventListener('mouseover' , function(){
+//     image.src = 'https://cdn.mos.cms.futurecdn.net/HaPnm6P7TZhPQGGUxtDjAg-320-80.jpg'
+// })
+
+// image.addEventListener('mouseout' , function(){
+//     image.src = 'https://i.pinimg.com/originals/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.png'
+// })
+
+
+
+//onsubmit
+
+// const username = document.querySelector('#username')
+// const email = document.querySelector('#email')
+// const password = document.querySelector('#password')
+// const form = document.querySelector('#form')
+
+// form.addEventListener('submit' , function(event){
+//     event.preventDefault()
+//     console.log(username.value)
+//     console.log(email.value)
+//     console.log(password.value)
+// })
