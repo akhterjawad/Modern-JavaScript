@@ -409,12 +409,18 @@ function hello(){
 
 const btn1 = document.querySelector('#btn');
 
-// btn.addEventListener('click' , hello);//jo kam hum HTML ma on click ka throw karaha tha wohi kam hum JavaScript ma addEventListener ka throw karta ha or on click bad practice ha ,addEventListener ma 3 parameter receive hota ha 3 bad ma dakhanga first ma string ma click ya submit or second ma function ka sirf nam ya phir pura function banado or third parameter ma sirf boolean hota ha or by default false hota ha
+// btn.addEventListener('click' , hello);//jo kam hum HTML ma on click ka throw karaha tha wohi kam hum JavaScript ma addEventListener ka throw karta ha or on click bad practice ha ,addEventListener ma 3 parameter receive hota ha 3 bad ma dakhanga first ma string ma click||submit||change||mouseover||mouseout or second ma function ka sirf nam ya phir pura function banado or third parameter ma sirf boolean hota ha or by default false hota ha
 
 
-// btn1.addEventListener('click' , function(){
-//     console.log('hello world!')
-// })
+// click mouse ka click pa kam karta ha.
+//submit enter ka button pa kam karta ha jaisa hum HTML ma form ka tag ka ander input field banata ha or enter daban apa wo console pa show kara ta ha.
+//change input pa laga ta ha jaisa hi hum input ma kuch likhta ha to wo chez hum console ma kuch bhi likh ka check karwa sakta ha first word pa 1 dafa show hoga then kuch bhi likho phir enter dabao to hi show hoga
+//mouseover sa jub hum ksi chez par just mouse laker jata ha to usma jo chez bhi karanga wo chez hojaygi
+//mouseout mouseover ka parallel ha
+
+btn1.addEventListener('click' , function(){
+    console.log('hello world!')
+})
 
 
 // bubbling
