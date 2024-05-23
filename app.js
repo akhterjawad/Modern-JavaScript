@@ -374,7 +374,7 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 const username = document.querySelector('#name');
 const age = document.querySelector('#age');
 const city = document.querySelector('#city');
-const email = document.querySelector('#email');
+const email = document.querySelector('#email')
 function getValue(){
     const obj = {
         name: username.value,
@@ -389,10 +389,11 @@ function getValue(){
 
 console.log('hello Deep Dom!');
 
-// Dom ma jo (.parentElement) wo parent ko get karta ha or jo (.parentNode) hota ha usma bhi yahi hota ha magar jis chiz pa aap (.parentNode) or us ka koi parent na ho jaisa HTML ka tag to wo kuch na kuch lazmi return karta ha magar (.parentElement) null return karta ha
+// Dom ma jo (.parentElement) wo parent ko get karta ha or jo (.parentNode) hota ha usma bhi yahi hota ha magar jis chiz pa aap (.parentNode) or us ka koi parent na ho jaisa HTML ka tag ko wo kuch na kuch lazmi return karta ha magar (.parentElement) null return karta ha
 
 
-//
+// Dom ma jo (.children) wo child ko get karta ha or jo (.childNodes) hota ha usma bhi yahi hota ha magar jis chiz pa aap (.childNodes) or us ka koi child na ho jaisa HTML ka tag ko wo kuch na kuch lazmi return karta ha magar (.parentElement) null return karta ha
+
 
 console.log('hello Events!');
 //onclick
@@ -406,14 +407,14 @@ function hello(){
 }
 
 
-const btn = document.querySelector('#btn');
+const btn1 = document.querySelector('#btn');
 
 // btn.addEventListener('click' , hello);//jo kam hum HTML ma on click ka throw karaha tha wohi kam hum JavaScript ma addEventListener ka throw karta ha or on click bad practice ha ,addEventListener ma 3 parameter receive hota ha 3 bad ma dakhanga first ma string ma click ya submit or second ma function ka sirf nam ya phir pura function banado or third parameter ma sirf boolean hota ha or by default false hota ha
 
 
-btn.addEventListener('click' , function(){
-    console.log('hello world!')
-})
+// btn1.addEventListener('click' , function(){
+//     console.log('hello world!')
+// })
 
 
 // bubbling
@@ -440,3 +441,27 @@ about.addEventListener('click', function () {
 //     event.stopPropagation();
 //     console.log('about clicked')
 // } , false)
+
+//.target sa wo variable target hota ha
+//.tagName sa us chez ka nam ajata ha
+//.remove() sa wo chez remove ojati ha jis chez pa laga o
+
+
+const ul1 = document.querySelector('.images');
+// const image3 = document.querySelector('#image-3');
+// const link = document.querySelector('#link-1');
+
+ul1.addEventListener('click', function (event) {
+    console.log('ul1 clicked');
+    console.log(event.target.tagName);
+    if(event.target.tagName === 'A'){
+        event.target.innerHTML = 'abc'
+        console.log(event.target.innerHTML);
+    } 
+    console.log(event.target.parentNode.tagName)
+    if(event.target.parentNode.tagName === 'LI'){
+        event.target.parentNode.remove()
+        console.log('LI');
+    }
+
+})
