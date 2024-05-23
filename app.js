@@ -59,7 +59,7 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 // console.log(username.split('a'));
 // console.log(username.length - 1);
 // console.log(username[username.length - 1]);
-// console.log('hellow'.concat(' world'));
+// console.log('hello'.concat(' world'));
 
 
 
@@ -205,7 +205,7 @@ let e = Math.ceil(2.021837)
 // console.log(p);
 
 
-// console.log('hellow time');
+// console.log('hello time');
 
 //jub hama koi bhi chez specific time ma run karani ho to us ka lia hum use krta ha setInterval 
 
@@ -226,7 +226,7 @@ let e = Math.ceil(2.021837)
 
 //jis tar ha setintervel hota ha is tarha settimeout bhi hota ha magar firq sirf itna ha dono ma ka settimeout 1 dafa chalta ha or setinterval jub tk chalta ha jub tk usko  na roko. settimeout ko rokna ka lia cleartimeout use krta ha
 
-// console.log('hellow date & time');
+// console.log('hello date & time');
 
 
 
@@ -297,7 +297,7 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 
 
 
-// console.log('hellow object');
+// console.log('hello object');
 
 // let array = {
 //     username: 'jawad',
@@ -519,3 +519,45 @@ ul1.addEventListener('click', function (event) {
 //     console.log(email.value)
 //     console.log(password.value)
 // })
+
+console.log('hellow hoisting');
+//Hoisting
+// var hoisting support karta ha let || const hoisting support nahi karta
+
+// console.log(usernames);
+// var usernames = 'abdullah';
+// console.log(username1);
+// let username1 = 'abdullah';
+
+// var usernames;
+
+console.log('hello IIFE ||Immediately Invoked Function Expression function');
+
+// (function IIFE(){
+//     console.log('hello world');
+// })()
+
+console.log('hello arrow function');
+
+
+//nicha normal function bana hua haa 2
+haseeb('world')
+function haseeb(name) {
+    console.log('hello',name);
+}
+
+
+const world = function (username){
+    console.log('hello world' , username)
+}
+world('abdullah');
+
+
+
+
+//arrow function hoisting support nahi karta but normal function karta ha
+
+// jawad()
+// const jawad = () => {
+//     console.log('hello arrow')
+// }
