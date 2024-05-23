@@ -561,3 +561,21 @@ world('abdullah');
 // const jawad = () => {
 //     console.log('hello arrow')
 // }
+
+
+//this
+
+//arrow function normal function ki tarha this. ko get nahi karta
+
+
+// const obj = {
+//     username: 'abdullah',
+//     greetUser: function () {
+//         console.log(this.username)
+//     },
+//     greetUser2: () => {
+//         console.log(this.username)
+//     }
+// }
+// obj.greetUser()
+// obj.greetUser2()
