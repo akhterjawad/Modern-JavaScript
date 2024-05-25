@@ -218,13 +218,13 @@ let e = Math.ceil(2.021837)
 //     if (a == 10) {
 //         clearInterval(id)
 //     } else {
-    
+
 //         console.log(a = a + 1);
 // console.log(a += + 1);
 //     }
 // }
 
-//jis tar ha setintervel hota ha is tarha settimeout bhi hota ha magar firq sirf itna ha dono ma ka settimeout 1 dafa chalta ha or setinterval jub tk chalta ha jub tk usko  na roko. settimeout ko rokna ka lia cleartimeout use krta ha
+//jis tar ha setintervel hota ha is tarha settimeout bhi hota ha magar firq sirf itna ha  ma ka settimeout 1 dafa chalta ha or setinterval jub tk chalta ha jub tk usko  na roko. settimeout ko rokna ka lia cleartimeout use krta ha
 
 // console.log('hello date & time');
 
@@ -371,19 +371,19 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 
 
 
-const username = document.querySelector('#name');
-const age = document.querySelector('#age');
-const city = document.querySelector('#city');
-const email = document.querySelector('#email')
-function getValue(){
-    const obj = {
-        name: username.value,
-        email: email.value,
-        city: city.value,
-        age: age.value
-    }
-    console.log(obj);
-}
+// const username = document.querySelector('#name');
+// const age = document.querySelector('#age');
+// const city = document.querySelector('#city');
+// const email = document.querySelector('#email')
+// function getValue(){
+//     const obj = {
+//         name: username.value,
+//         email: email.value,
+//         city: city.value,
+//         age: age.value
+//     }
+//     console.log(obj);
+// }
 
 
 
@@ -402,12 +402,12 @@ console.log('hello Events!');
 //onmouseout
 //onsubmit
 
-function hello(){
-    console.log('hello world');
-}
+// function hello(){
+//     console.log('hello world');
+// }
 
 
-const btn1 = document.querySelector('#btn');
+// const btn1 = document.querySelector('#btn');
 
 // btn.addEventListener('click' , hello);//jo kam hum HTML ma on click ka throw karaha tha wohi kam hum JavaScript ma addEventListener ka throw karta ha or on click bad practice ha ,addEventListener ma 3 parameter receive hota ha 3 bad ma dakhanga first ma string ma click||submit||change||mouseover||mouseout or second ma function ka sirf nam ya phir pura function banado or third parameter ma sirf boolean hota ha or by default false hota ha
 
@@ -418,9 +418,9 @@ const btn1 = document.querySelector('#btn');
 //mouseover sa jub hum ksi chez par just mouse laker jata ha to usma jo chez bhi karanga wo chez hojaygi
 //mouseout mouseover ka parallel ha
 
-btn1.addEventListener('click' , function(){
-    console.log('hello world!')
-})
+// btn1.addEventListener('click' , function(){
+//     console.log('hello world!')
+// })
 
 
 // bubbling
@@ -430,16 +430,16 @@ btn1.addEventListener('click' , function(){
 // capturing ma hum isi chiz ko apna hisab sa change kardata ha
 
 
-const ul = document.querySelector('#ul');
-const about = document.querySelector('#about');
+// const ul = document.querySelector('#ul');
+// const about = document.querySelector('#about');
 
-ul.addEventListener('click', function () {
-    console.log('ul clicked')
-}, false)
+// ul.addEventListener('click', function () {
+//     console.log('ul clicked')
+// }, false)
 
-about.addEventListener('click', function () {
-    console.log('about clicked')
-} , false)
+// about.addEventListener('click', function () {
+//     console.log('about clicked')
+// } , false)
 
 // stopPropagation ka method sa hum ksi bhi chiz ka default behaviour ko change karsakta ha
 
@@ -453,24 +453,24 @@ about.addEventListener('click', function () {
 //.remove() sa wo chez remove ojati ha jis chez pa laga o
 
 
-const ul1 = document.querySelector('.images');
-// const image3 = document.querySelector('#image-3');
-// const link = document.querySelector('#link-1');
+// const ul1 = document.querySelector('.images');
+// // const image3 = document.querySelector('#image-3');
+// // const link = document.querySelector('#link-1');
 
-ul1.addEventListener('click', function (event) {
-    console.log('ul1 clicked');
-    console.log(event.target.tagName);
-    if(event.target.tagName === 'A'){
-        event.target.innerHTML = 'abc'
-        console.log(event.target.innerHTML);
-    } 
-    console.log(event.target.parentNode.tagName)
-    if(event.target.parentNode.tagName === 'LI'){
-        event.target.parentNode.remove()
-        console.log('LI');
-    }
+// ul1.addEventListener('click', function (event) {
+//     console.log('ul1 clicked');
+//     console.log(event.target.tagName);
+//     if(event.target.tagName === 'A'){
+//         event.target.innerHTML = 'abc'
+//         console.log(event.target.innerHTML);
+//     } 
+//     console.log(event.target.parentNode.tagName)
+//     if(event.target.parentNode.tagName === 'LI'){
+//         event.target.parentNode.remove()
+//         console.log('LI');
+//     }
 
-})
+// })
 
 
 //onchange
@@ -543,12 +543,12 @@ console.log('hello arrow function');
 //nicha normal function bana hua haa 2
 haseeb('world')
 function haseeb(name) {
-    console.log('hello',name);
+    console.log('hello', name);
 }
 
 
-const world = function (username){
-    console.log('hello world' , username)
+const world = function (username) {
+    console.log('hello world', username)
 }
 world('abdullah');
 
@@ -579,3 +579,36 @@ world('abdullah');
 // }
 // obj.greetUser()
 // obj.greetUser2()
+
+console.log('hello array loops');
+//1 for loop    array or object dono ma use ho sakta ha
+//2 for of       array ma use ho sakta ha
+//2 for in          object  ma use ho sakta ha
+
+
+let ArrayMain = ['apple', 'banana', 'graps']
+// let div = document.querySelector('div')
+
+//1 for loop
+
+// for (let i = 0; i < main.length; i++) {
+//     console.log(main[i]);
+//     div.innerHTML += `
+// ${main[i]}
+// `
+// }
+let ObjectMain ={
+    username: 'jawad',
+    age:20
+}
+//2 for of
+
+for (const iterator of ArrayMain) {
+    console.log(iterator);
+}
+
+//2 for in
+//is tarika sa object ki sirf ki aygi
+for (const key in ObjectMain ) {
+    console.log(key);
+}
