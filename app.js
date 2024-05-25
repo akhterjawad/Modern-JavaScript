@@ -587,7 +587,7 @@ console.log('hello array loops');
 
 
 let ArrayMain = ['apple', 'banana', 'graps']
-// let div = document.querySelector('div')
+let div = document.querySelector('div')
 
 //1 for loop
 
@@ -597,9 +597,9 @@ let ArrayMain = ['apple', 'banana', 'graps']
 // ${main[i]}
 // `
 // }
-let ObjectMain ={
+let ObjectMain = {
     username: 'jawad',
-    age:20
+    age: 20
 }
 //2 for of
 
@@ -609,6 +609,40 @@ for (const iterator of ArrayMain) {
 
 //2 for in
 //is tarika sa object ki sirf ki aygi
-for (const key in ObjectMain ) {
-    console.log(key);
+for (const key in ObjectMain) {
+    console.log(`${key} ==>${ObjectMain[key]}`);
 }
+
+// method ma "." ata ha or function ma "." nahi ata
+
+//some array methods like loop
+
+//1  forEach
+//2  map
+//3  filter
+//4  reduce
+
+//two functions
+//1 callback function
+//2 heigh order function
+
+// callback function wo function hota ha jo ksi function ka ander as an argument bhajta ha
+ArrayMain.forEach(function (item) {
+    console.log(item);
+})
+
+// foreach ka method ma or map ka method ma sirf itna fraq ha K map ksi bhi tarha return nahi karta 
+
+ArrayMain.forEach((main) => {
+    console.log(main);
+    div.innerHTML += `
+<h1>${main}</h1>
+`
+})
+
+ArrayMain.map((items, index) => {
+    div.innerHTML += `
+    <h1>${items}</h1>`
+    console.log(items);
+    console.log(index);
+})
