@@ -554,6 +554,7 @@ world('abdullah');
 
 
 
+//arrow function ma agar aap sirf single parameter recetive karta ha to ()bracket dalna ki zarorat nahi ha. 1 sa zada parameter recetive karta ha ya agar parameter receive nahi karta to bhi () dalna ha agar ham single console chalata ha to {} dalna ki zarorat nahi ha or return ki bhi zarorat nahi ha.agar aap na {} dal dia to return lazmi karna paraga 
 
 //arrow function hoisting support nahi karta but normal function karta ha
 
@@ -626,12 +627,19 @@ for (const key in ObjectMain) {
 //1 callback function
 //2 heigh order function
 
-// callback function wo function hota ha jo ksi function ka ander as an argument bhajta ha
-ArrayMain.forEach(function (item) {
-    console.log(item);
+// callback function wo function hota ha jo ksi function ka ander as an argument bhajta ha.callback function ma 3 parameter receive karta ha paihly ma array ka items dosra ma unka indexNo or 3 ma poori ki poori array
+ArrayMain.forEach(function (item, index, ArrayMain) {
+    console.log(item, index, ArrayMain);
 })
 
-// foreach ka method ma or map ka method ma sirf itna fraq ha K map ksi bhi tarha return nahi karta 
+// foreach ka method ma or map ka method ma sirf itna fraq ha K foreach ksi bhi tarha return nahi karta 
+function alpha(data) {
+    console.log(`hello ${data}`);
+}
+function get() {
+    (alpha('jawad'));
+}
+get()
 
 ArrayMain.forEach((main) => {
     console.log(main);
