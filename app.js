@@ -654,3 +654,69 @@ ArrayMain.map((items, index) => {
     console.log(items);
     console.log(index);
 })
+
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const main = num.map(item => item)
+console.log(main);
+
+const sumOfNum = num.map(item => item + 10)// ya jo parameter yani item ka bad + 10 likha hua is ki waja sahar number ma 10 + horaha ha  
+console.log(sumOfNum);
+
+
+let maap = num.map(item => item > 5)
+console.log('map=>', maap);
+
+
+let filter = num.filter((item) => {
+    return item > 5
+})
+console.log(`filtered=>`, filter);
+
+
+let filteredarray = []
+for (let i = 0; i < num.length; i++) {
+    if (num[i] > 5) {
+        filteredarray.push(num[i])
+    }
+}
+console.log(filteredarray);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
