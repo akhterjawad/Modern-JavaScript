@@ -922,10 +922,16 @@ const electronics = products.filter(item => {
 }).filter((item) => {
     return item.price < 200
 })
-
 console.log(electronics);
 
 
+//nicha wala variable ma return ka key word is lia nahi lagay Q ka hum na apna arrow function ma  Scope yani {} nahi lagay. jub hum {} nahi lagata to return ka key word lagana zarory nahi hota.
+let electronicsmain = products.filter(item => 
+    item.category === 'Electronics' && item.price > 100
+).filter((item) => 
+    item.price < 200
+)
+console.log(electronicsmain);
 
 
 
