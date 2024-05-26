@@ -592,10 +592,10 @@ let div = document.querySelector('div')
 
 //1 for loop
 
-for (let i = 0; i < main.length; i++) {
-    console.log(main[i]);
+for (let i = 0; i < ArrayMain.length; i++) {
+    console.log(ArrayMain[i]);
     div.innerHTML += `
-${main[i]}
+${ArrayMain[i]}
 `
 }
 let ObjectMain = {
@@ -913,11 +913,17 @@ const products = [
     }
 ];
 
+// const electronics = products.filter(item=>{return item.category==='Electronics'})
+// console.log(electronics);  // is tarika sa hamara pas sirf products ma wo category ayieanga jo Electronics ki  
 
+// filter ka me
+const electronics = products.filter(item => {
+    return item.category === 'Electronics' && item.price > 100
+}).filter((item) => {
+    return item.price < 200
+})
 
-
-
-
+console.log(electronics);
 
 
 
