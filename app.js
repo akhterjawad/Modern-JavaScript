@@ -302,8 +302,8 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 // let array = {
 //     username: 'jawad',
 //     age: '19',
-//     address: 'malir'
-//     // isLoggedIn: false,
+//     address: 'malir',
+//     isLoggedIn: false,
 // }
 // //object ma jo chez left ma likhi hoti ha jaisa username wo hoti ha property or jo right pa likhi hoti ha wo ha value jo string ma likha hui ha
 
@@ -627,7 +627,9 @@ for (const key in ObjectMain) {
 //1 callback function
 //2 heigh order function
 
-// callback function wo function hota ha jo ksi function ka ander as an argument bhajta ha.callback function ma 3 parameter receive karta ha paihly ma array ka items dosra ma unka indexNo or 3 ma poori ki poori array
+//1 callback function wo function hota ha jo ksi function ka ander as an argument bhajta ha.callback function ma 3 parameter receive karta ha paihly ma array ka items dosra ma unka indexNo or 3 ma poori ki poori array
+
+//2 heigh order function wo function hota ha jo ass an argument apna ander call back function lata ha usa heigh order function katha ha
 ArrayMain.forEach(function (item, index, ArrayMain) {
     console.log(item, index, ArrayMain);
 })
