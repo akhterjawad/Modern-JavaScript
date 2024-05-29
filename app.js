@@ -299,7 +299,6 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 
 // console.log('hello object');
 
-
 // let array = {
 //     username: 'jawad',
 //     age: '19',
