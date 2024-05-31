@@ -942,6 +942,42 @@ console.log('Promise');
 //promise ma ya hota ha ka web cresh nahi hoti. promise ma ju data ata ha jubhi print karata ha
 
 //fetch() fetch ka ander hum promises banata ha  
-//.then() agar data ajay to then chalaga
-//.catch() agar data na ay to catch chalaga
+//.then() agar data ajay to then chalaga. is ka ander 1 callback function bantaha
+//.catch() agar data na ay to catch chalaga. is ka ander 1 callback function bantaha then ki tarha
 //.finally() agar then or catch dono chaljay to finally chalaga magar isko hum badma dakhanga
+
+//promise ka ander 1 callback function banta ha o apna ander 2 parameter receive karta ha first is resolve, second is reject 
+
+const experience = 5;
+const job =  new Promise((resolve, reject) => {
+    if (experience > 3) {
+        console.log('accepted');
+        resolve()
+    } else {
+        console.log('rejected');
+        reject()
+    }
+})
+job
+.then(()=>{
+console.log('then');
+})
+.catch(()=>{
+    console.log('catch');
+})
+
+// is tarika sa promises kam karta ha
+
+
+
+
+
+
+
+
+
+
+
+
+
+
