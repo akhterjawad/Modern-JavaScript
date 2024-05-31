@@ -934,3 +934,14 @@ let electronicsmain = products.filter(item =>
     item.price < 200
 )
 console.log(electronicsmain);
+
+
+console.log('Promise');
+
+// jub hum database pa data mangwana ka lia call karta ha to wo data ana ma time lagta ha agar hum usa setTimeout ma 1 second ka bad print karwata ha or agar wo print nahi hua, data ana ma time laga to website cresh hojay gi therefore hum Promise use karta 
+//promise ma ya hota ha ka web cresh nahi hoti. promise ma ju data ata ha jubhi print karata ha
+
+//fetch() fetch ka ander hum promises banata ha  
+//.then() agar data ajay to then chalaga
+//.catch() agar data na ay to catch chalaga
+//.finally() agar then or catch dono chaljay to finally chalaga magar isko hum badma dakhanga
