@@ -629,7 +629,7 @@ for (const key in ObjectMain) {
 
 //1 callback function wo function hota ha jo ksi function ka ander as an argument bhajta ha.callback function ma 3 parameter receive karta ha paihly ma array ka items dosra ma unka indexNo or 3 ma poori ki poori array
 
-//2 heigh order function wo function hota ha jo ass an argument apna ander call back function lata ha usa heigh order function katha ha
+//2 heigh order function wo function hota ha jo ass an argument apna ander call back function lata ha receive karta ha usa heigh order function katha ha
 ArrayMain.forEach(function (item, index, ArrayMain) {
     console.log(item, index, ArrayMain);
 })
@@ -918,7 +918,8 @@ const products = [
 // const electronics = products.filter(item=>{return item.category==='Electronics'})
 // console.log(electronics);  // is tarika sa hamara pas sirf products ma wo category ayieanga jo Electronics ki  
 
-// filter ka me
+// ksi bhi method ka uper 1 or method lagana chaining kahlati ha jaisa mana nicha filter ka method pa dubara .filter ka method call kia ha. ksi bhi method pa koi or method call karana chaining kahlati ha
+
 const electronics = products.filter(item => {
     return item.category === 'Electronics' && item.price > 100
 }).filter((item) => {
@@ -941,7 +942,7 @@ console.log('Promise');
 // jub hum database pa data mangwana ka lia call karta ha to wo data ana ma time lagta ha agar hum usa setTimeout ma 1 second ka bad print karwata ha or agar wo print nahi hua, data ana ma time laga to website cresh hojay gi therefore hum Promise use karta 
 //promise ma ya hota ha ka web cresh nahi hoti. promise ma ju data ata ha jubhi print karata ha
 
-//fetch() fetch ka ander hum promises banata ha  
+//fetch()  fetch ko ham badma dakhanag
 //.then() agar data ajay to then chalaga. is ka ander 1 callback function bantaha
 //.catch() agar data na ay to catch chalaga. is ka ander 1 callback function bantaha then ki tarha
 //.finally() agar then or catch dono chaljay to finally chalaga magar isko hum badma dakhanga
@@ -965,8 +966,7 @@ console.log('then');
 .catch(()=>{
     console.log('catch');
 })
-
-// is tarika sa promises kam karta ha
+// is tarika sa promise kam karta ha or upper wala promise ma hamna abhi synchronous kam kara ha asynchronous kam nahi kara
 
 
 
