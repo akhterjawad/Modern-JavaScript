@@ -942,7 +942,7 @@ console.log('Promise');
 // jub hum database pa data mangwana ka lia call karta ha to wo data ana ma time lagta ha agar hum usa setTimeout ma 1 second ka bad print karwata ha or agar wo print nahi hua, data ana ma time laga to website cresh hojay gi therefore hum Promise use karta 
 //promise ma ya hota ha ka web cresh nahi hoti. promise ma ju data ata ha jubhi print karata ha
 
-//fetch()  fetch ko ham badma dakhanag darasal fetch API return karta ha
+//fetch()  darasal fetch promise return karta ha or is ka ander API ka link dalta ha or ya JS ka default function ha
 //.then() agar data ajay to then chalaga. is ka ander 1 callback function bantaha
 //.catch() agar data na ay to catch chalaga. is ka ander 1 callback function bantaha then ki tarha
 //.finally() agar then or catch dono chaljay to finally chalaga magar isko hum badma dakhanga
@@ -1001,19 +1001,21 @@ console.log('hello API');
 
 //api hama do tarika sa milti ha fetch, axious hamara pas fetch default function ha or axious 1 third party liberary ha
 
-// fetch ka ander mujha .json() wala method chalana paraga axious ma nahi chalana para ga
-fetch('https://jsonplaceholder.typicode.com/users')
-.then((res)=>{
-return res.json()
-}).then((res)=>{
-console.log(res);
-})
-.catch((err)=>{
-console.log(err);
-})
+// fetch ka ander mujha .json() wala method chalana paraga axious ma nahi chalana paraga
+// fetch('https://jsonplaceholder.typicode.com/users')
+// .then((res)=>{
+// return res.json()
+// }).then((res)=>{
+// console.log(res);
+// })
+// .catch((err)=>{
+// console.log(err);
+// })
+// kabhi bhi bina catch() ka  kam nahi karna chahiya
 
-
-
+// axious ko hum hamaisa download karta ha magar CDN bhi laga sakta ha lakin CDN bad practice ha
+// axious ka lia hum 2 link lagata ha  1 HTML ma or 1 JavaScript ma
+// axious ka script ka link hamasha app.js ka uper lagainga HTML ma
 
 
 
