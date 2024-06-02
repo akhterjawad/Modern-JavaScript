@@ -1022,8 +1022,15 @@ console.log('hello API');
 let API = document.querySelector('.main') 
 axios('https://fakestoreapi.com/products')
 .then((res)=>{
-    console.log(res);
-
+    console.log(res.data);
+res.data.map((item)=>{
+    API.innerHTML+=`
+    <h1>Title: ${item.title}</h1>
+    <img  width="200"  src="${item.image}"  alt="product"/>
+    <h1>Price: ${item.price}</h1>
+    <hr/>
+    `
+})
 })
 .catch((err)=>{
 console.log(err);
