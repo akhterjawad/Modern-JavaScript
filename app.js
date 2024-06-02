@@ -997,6 +997,24 @@ shaadiScnz(200000)
     })
 
 console.log('hello API');
+// API hama database sa data la ka dati ha
+
+//api hama do tarika sa milti ha fetch, axious hamara pas fetch default function ha or axious 1 third party liberary ha
+
+// fetch ka ander mujha .json() wala method chalana paraga axious ma nahi chalana para ga
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((res)=>{
+return res.json()
+}).then((res)=>{
+console.log(res);
+})
+.catch((err)=>{
+console.log(err);
+})
+
+
+
+
 
 
 
