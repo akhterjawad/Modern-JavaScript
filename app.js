@@ -974,29 +974,30 @@ job
 // is tarika sa promise kam karta ha or upper wala promise ma hamna abhi synchronous kam kara ha asynchronous kam nahi kara
 
 
-function shaadiScnz(paisa) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (paisa > 10000) {
-                // console.log('shadi mubarak');
-                resolve('shadi mubarak')
-            } else {
-                // console.log('!shadi mubarak');
-                reject('!shadi mubarak')
-            }
-        }, 1000);
-    })
-}
+// function shaadiScnz(paisa) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if (paisa > 10000) {
+//                 // console.log('shadi mubarak');
+//                 resolve('shadi mubarak')
+//             } else {
+//                 // console.log('!shadi mubarak');
+//                 reject('!shadi mubarak')
+//             }
+//         }, 1000);
+//     })
+// }
 
-shaadiScnz(200000)
-    .then((res) => {
-        console.log(res);
-    })
-    .catch((err) => {
-        console.log(err);
-    })
+// shaadiScnz(200000)
+//     .then((res) => {
+//         console.log(res);
+//     })
+//     .catch((err) => {
+//         console.log(err);
+//     })
 
 console.log('hello API');
+// Application programing interface
 // API hama database sa data la ka dati ha
 
 //api hama do tarika sa milti ha fetch, axious hamara pas fetch default function ha or axious 1 third party liberary ha
@@ -1016,6 +1017,20 @@ console.log('hello API');
 // axious ko hum hamaisa download karta ha magar CDN bhi laga sakta ha lakin CDN bad practice ha
 // axious ka lia hum 2 link lagata ha  1 HTML ma or 1 JavaScript ma
 // axious ka script ka link hamasha app.js ka uper lagainga HTML ma
+
+// hamara pas jo data API ka through ata ha wo console ma object kia form ma show hota ha 
+let API = document.querySelector('.main') 
+axios('https://fakestoreapi.com/products')
+.then((res)=>{
+    console.log(res);
+
+})
+.catch((err)=>{
+console.log(err);
+})
+
+
+
 
 
 
