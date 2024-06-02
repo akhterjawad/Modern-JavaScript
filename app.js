@@ -929,9 +929,9 @@ console.log(electronics);
 
 
 //nicha wala variable ma return ka key word is lia nahi lagay Q ka hum na apna arrow function ma  Scope yani {} nahi lagay. jub hum {} nahi lagata to return ka key word lagana zarory nahi hota.
-let electronicsmain = products.filter(item => 
+let electronicsmain = products.filter(item =>
     item.category === 'Electronics' && item.price > 100
-).filter((item) => 
+).filter((item) =>
     item.price < 200
 )
 console.log(electronicsmain);
@@ -942,7 +942,7 @@ console.log('Promise');
 // jub hum database pa data mangwana ka lia call karta ha to wo data ana ma time lagta ha agar hum usa setTimeout ma 1 second ka bad print karwata ha or agar wo print nahi hua, data ana ma time laga to website cresh hojay gi therefore hum Promise use karta 
 //promise ma ya hota ha ka web cresh nahi hoti. promise ma ju data ata ha jubhi print karata ha
 
-//fetch()  fetch ko ham badma dakhanag
+//fetch()  fetch ko ham badma dakhanag darasal fetch API return karta ha
 //.then() agar data ajay to then chalaga. is ka ander 1 callback function bantaha
 //.catch() agar data na ay to catch chalaga. is ka ander 1 callback function bantaha then ki tarha
 //.finally() agar then or catch dono chaljay to finally chalaga magar isko hum badma dakhanga
@@ -950,7 +950,7 @@ console.log('Promise');
 //promise ka ander 1 callback function banta ha o apna ander 2 parameter receive karta ha first is resolve, second is reject 
 
 const experience = 5;
-const job =  new Promise((resolve, reject) => {
+const job = new Promise((resolve, reject) => {
     if (experience > 3) {
         console.log('accepted');
         resolve()
@@ -959,17 +959,44 @@ const job =  new Promise((resolve, reject) => {
         reject()
     }
 })
+// nicha jo job ka nam ka variable bana ha is ka aga semicolome ';' nahi lagata errer ajayga or job.then.catch ko 1 line ma bhi liikhsakta ha magar ya bad practice ha
 job
-.then(()=>{
-console.log('then');
-})
-.catch(()=>{
-    console.log('catch');
-})
+    .then(() => {
+        console.log('then');
+    })
+    .catch(() => {
+        console.log('catch');
+    })
+
+// job.then(() => {console.log('then');}).catch(() => {console.log('catch');})
+
+
 // is tarika sa promise kam karta ha or upper wala promise ma hamna abhi synchronous kam kara ha asynchronous kam nahi kara
 
 
+function shaadiScnz(paisa) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (paisa > 10000) {
+                // console.log('shadi mubarak');
+                resolve('shadi mubarak')
+            } else {
+                // console.log('!shadi mubarak');
+                reject('!shadi mubarak')
+            }
+        }, 1000);
+    })
+}
 
+shaadiScnz(200000)
+    .then((res) => {
+        console.log(res);
+    })
+    .catch((err) => {
+        console.log(err);
+    })
+
+console.log('hello API');
 
 
 
