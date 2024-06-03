@@ -297,7 +297,7 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 
 
 
-// console.log('hello object');
+console.log('hello object');
 
 // let array = {
 //     username: 'jawad',
@@ -305,7 +305,7 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 //     address: 'malir',
 //     isLoggedIn: false,
 // }
-// //object ma jo chez left ma likhi hoti ha jaisa username wo hoti ha property or jo right pa likhi hoti ha wo ha value jo string ma likha hui ha
+// //object ka ander jo chez left ma likhi hoti ha jaisa username wo hoti ha property,key or jo right pa likhi hoti ha wo ha value jo string ma likha hui ha
 
 // console.log(array);//is tarha ham pura object ko console me show karwa sakta ha
 // console.log(array.username);//is tarha hum object ka username ko console me show karwa sakta ha
@@ -340,9 +340,9 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 //     age: '10,',
 //     email: 'akterjawad566@gmail.com'
 // }
-// for (let key in haseeb) {
-//     console.log(key + ':' + haseeb[key]);//is tarha object ki properties , value ko get krsakta ha
-// }
+for (let key in haseeb) {
+    console.log(key + ':' + haseeb[key]);//is tarha object ki properties , value ko get krsakta ha
+}
 
 
 // let hasnain = {
@@ -363,7 +363,7 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 //     firstnames: 'jawad',
 //     lastnames: 'akhter',
 //     fullname :function () {
-//         return this.firstnames +''+ this.lastnames;
+//         return this.firstnames +' '+ this.lastnames;
 //     }
 // }
 
@@ -409,7 +409,7 @@ console.log('hello Events!');
 
 // const btn1 = document.querySelector('#btn');
 
-// btn.addEventListener('click' , hello);//jo kam hum HTML ma on click ka throw karaha tha wohi kam hum JavaScript ma addEventListener ka throw karta ha or on click bad practice ha ,addEventListener ma 3 parameter receive hota ha 3 bad ma dakhanga first ma string ma click||submit||change||mouseover||mouseout or second ma function ka sirf nam ya phir pura function banado or third parameter ma sirf boolean hota ha or by default false hota ha
+// btn.addEventListener('click' , hello);//jo kam hum HTML ma on click ka throw karaha tha wohi kam hum JavaScript ma addEventListener ka throw karta ha or on click bad practice ha ,addEventListener ma 3 parameter receive hota ha 3 bad ma dakhanga first ma string ma click||submit||change||mouseover||mouseout or second ma function ka sirf name yani function ka reference pass karna ya phir pura function banado or third parameter ma sirf boolean hota ha or by default false hota ha
 
 
 // click mouse ka click pa kam karta ha.
@@ -540,7 +540,7 @@ console.log('hello IIFE ||Immediately Invoked Function Expression function');
 console.log('hello arrow function');
 
 
-//nicha normal function bana hua haa 2
+//nicha 2 normal function bana hua haa 
 haseeb('world')
 function haseeb(name) {
     console.log('hello', name);
