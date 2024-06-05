@@ -598,17 +598,19 @@ for (let i = 0; i < ArrayMain.length; i++) {
 ${ArrayMain[i]}
 `
 }
-let ObjectMain = {
-    username: 'jawad',
-    age: 20
-}
+
 //2 for of
 
 for (const iterator of ArrayMain) {
     console.log(iterator);
 }
 
-//2 for in
+let ObjectMain = {
+    username: 'jawad',
+    age: 20
+}
+
+//3 for in
 //is tarika sa object ki sirf ki aygi
 for (const key in ObjectMain) {
     console.log(`${key} ==>${ObjectMain[key]}`);
