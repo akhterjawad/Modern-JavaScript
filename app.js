@@ -299,12 +299,12 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 
 console.log('hello object');
 
-// let array = {
-//     username: 'jawad',
-//     age: '19',
-//     address: 'malir',
-//     isLoggedIn: false,
-// }
+let array = {
+    username: 'jawad',
+    age: '19',
+    address: 'malir',
+    isLoggedIn: false,
+}
 // //object ka ander jo chez left ma likhi hoti ha jaisa username wo hoti ha property,key or jo right pa likhi hoti ha wo ha value jo string ma likha hui ha
 
 // console.log(array);//is tarha ham pura object ko console me show karwa sakta ha
@@ -324,15 +324,15 @@ console.log('hello object');
 // console.log(obj);
 
 
-// let ahmed = {
-//     firstnames: 'jawad',
-//     lastnames: 'jawad',
-//     age: '10,',
-//     email: 'akterjawad566@gmail.com'
-// }
-// for (let key in ahmed) {
-//     console.log(key);//is tarha object ki sirf properties ko get krsakta ha
-// }
+let ahmed = {
+    firstnames: 'jawad',
+    lastnames: 'akhter',
+    age: '10,',
+    email: 'akterjawad566@gmail.com'
+}
+for (let key in ahmed) {
+    console.log(key);//is tarha object ki sirf sari properties ko get krsakta ha
+}
 
 // let haseeb = {
 //     firstnames: 'jawad',
@@ -341,7 +341,7 @@ console.log('hello object');
 //     email: 'akterjawad566@gmail.com'
 // }
 for (let key in haseeb) {
-    console.log(key + ':' + haseeb[key]);//is tarha object ki properties , value ko get krsakta ha
+    console.log(key + ':' + haseeb[key]);//is tarha object ki properties ko or values ko get krsakta ha
 }
 
 
