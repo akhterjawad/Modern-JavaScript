@@ -541,18 +541,26 @@ console.log('hello arrow function');
 
 
 //nicha 2 normal function bana hua haa 
-haseeb('world')
-function haseeb(name) {
-    console.log('hello', name);
-}
+// haseeb('world')
+// function haseeb(name) {
+//     console.log('hello', name);
+// }
 
+// nicha wala function hoisting support nahi karta
+// const world = function (username) {
+//     console.log('hello world', username)
+// }
+// world('abdullah');
 
-const world = function (username) {
-    console.log('hello world', username)
-}
-world('abdullah');
+// let ebad=()=>{
+//     console.log('arrow');
+// }
+// ebad()
 
-
+// rar =()=>{
+//     console.log('arrow without variable');
+// } 
+// rar()
 
 //arrow function ma agar aap sirf single parameter recetive karta ha to ()bracket dalna ki zarorat nahi ha. 1 sa zada parameter recetive karta ha ya agar parameter receive nahi karta to bhi () dalna ha agar ham single console chalata ha to {} dalna ki zarorat nahi ha or return ki bhi zarorat nahi ha.agar aap na {} dal dia to return lazmi karna paraga 
 
