@@ -340,9 +340,9 @@ for (let key in ahmed) {
 //     age: '10,',
 //     email: 'akterjawad566@gmail.com'
 // }
-for (let key in haseeb) {
-    console.log(key + ':' + haseeb[key]);//is tarha object ki properties ko or values ko get krsakta ha
-}
+// for (let key in haseeb) {
+    // console.log(key + ':' + haseeb[key]);//is tarha object ki properties ko or values ko get krsakta ha
+// }
 
 
 // let hasnain = {
@@ -562,7 +562,7 @@ console.log('hello arrow function');
 // } 
 // rar()
 
-//arrow function ma agar aap sirf single parameter recetive karta ha to ()bracket dalna ki zarorat nahi ha. 1 sa zada parameter recetive karta ha ya agar parameter receive nahi karta to bhi () dalna ha agar ham single console chalata ha to {} dalna ki zarorat nahi ha or return ki bhi zarorat nahi ha.agar aap na {} dal dia to return lazmi karna paraga 
+//arrow function ma agar aap sirf single parameter recetive karta ha to ()bracket dalna ki zarorat nahi ha. 1 sa zada parameter recetive karta ha ya agar parameter receive nahi karta to bhi () dalna ha agar ham single console chalata ha to {} dalna ki zarorat nahi ha or return ki bhi zarorat nahi ha.agar aap na {} dal dia to return lazmi karna paraga agar arrow function ma aap {} lagata ha to wo statement kahlati ha or baghir {} ka kuch kara to wo expression kahlati ha
 
 //arrow function hoisting support nahi karta but normal function karta ha
 
@@ -645,14 +645,27 @@ ArrayMain.forEach(function (item, index, ArrayMain) {
 })
 
 // foreach ka method ma or map ka method ma sirf itna fraq ha K foreach ksi bhi tarha return nahi karta 
+
+
 function alpha(data) {
     console.log(`hello ${data}`);
 }
 
-function get() {
-    (alpha('jawad'));
+function get(callback) {
+    // Simulate an asynchronous operation using setTimeout
+    setTimeout(() => {
+        callback('jawad');
+    }, 1000);
 }
-get()
+
+// Pass alpha as a callback function to get
+get(alpha);
+
+// In this example:
+// get takes a callback function as an argument.
+// Inside get, we simulate an asynchronous operation using setTimeout and call the callback function after 1 second, passing 'jawad' as the argument.
+// alpha is passed as the callback when calling get.
+
 
 ArrayMain.forEach((main) => {
     console.log(main);
