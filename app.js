@@ -305,7 +305,7 @@ let array = {
     address: 'malir',
     isLoggedIn: false,
 }
-// //object ka ander jo chez left ma likhi hoti ha jaisa username wo hoti ha property,key or jo right pa likhi hoti ha wo ha value jo string ma likha hui ha
+// //object ka ander jo chez left ma likhi hoti ha jaisa username wo hoti ha key,property or jo right pa likhi hoti ha wo ha value jo string ma likha hui ha
 
 // console.log(array);//is tarha ham pura object ko console me show karwa sakta ha
 // console.log(array.username);//is tarha hum object ka username ko console me show karwa sakta ha
@@ -334,15 +334,15 @@ for (let key in ahmed) {
     console.log(key);//is tarha object ki sirf sari properties ko get krsakta ha
 }
 
-// let haseeb = {
-//     firstnames: 'jawad',
-//     lastnames: 'jawad',
-//     age: '10,',
-//     email: 'akterjawad566@gmail.com'
-// }
-// for (let key in haseeb) {
-    // console.log(key + ':' + haseeb[key]);//is tarha object ki properties ko or values ko get krsakta ha
-// }
+let haseeb = {
+    firstnames: 'jawad',
+    lastnames: 'jawad',
+    age: '10,',
+    email: 'akterjawad566@gmail.com'
+}
+for (let key in haseeb) {
+    console.log(key + ':' + haseeb[key]);//is tarha object ki properties ko or values ko get krsakta ha
+}
 
 
 // let hasnain = {
@@ -389,10 +389,10 @@ for (let key in ahmed) {
 
 console.log('hello Deep Dom!');
 
-// Dom ma jo (.parentElement) wo parent ko get karta ha or jo (.parentNode) hota ha usma bhi yahi hota ha magar jis chiz pa aap (.parentNode) or us ka koi parent na ho jaisa HTML ka tag ko wo kuch na kuch lazmi return karta ha magar (.parentElement) null return karta ha
+// Dom ma jo (.parentElement) hota ha wo parent ko get karta ha or jo (.parentNode) hota ha usma bhi yahi hota ha magar jis chiz pa aap (.parentNode) or us ka koi parent na ho jaisa HTML ka tag ko wo kuch na kuch lazmi return karta ha magar (.parentElement) null return karta ha
 
 
-// Dom ma jo (.children) wo child ko get karta ha or jo (.childNodes) hota ha usma bhi yahi hota ha magar jis chiz pa aap (.childNodes) or us ka koi child na ho jaisa HTML ka tag ko wo kuch na kuch lazmi return karta ha magar (.parentElement) null return karta ha
+// Dom ma jo (.children) wo child ko get karta ha or jo (.childNodes) hota ha usma bhi yahi hota ha magar jis chiz pa aap (.childNodes) lagao or us ka koi child na ho jaisa HTML ka tag ko wo kuch na kuch lazmi return karta ha magar (.parentElement) null return karta ha
 
 
 console.log('hello Events!');
@@ -407,7 +407,7 @@ console.log('hello Events!');
 // }
 
 
-// const btn1 = document.querySelector('#btn');
+const btn1 = document.querySelector('#btn');
 
 // btn.addEventListener('click' , hello);//jo kam hum HTML ma on click ka throw karaha tha wohi kam hum JavaScript ma addEventListener ka throw karta ha or on click bad practice ha ,addEventListener ma 3 parameter receive hota ha 3 bad ma dakhanga first ma string ma click||submit||change||mouseover||mouseout or second ma function ka sirf name yani function ka reference pass karna ya phir pura function banado or third parameter ma sirf boolean hota ha or by default false hota ha
 
@@ -418,9 +418,9 @@ console.log('hello Events!');
 //mouseover sa jub hum ksi chez par just mouse laker jata ha to usma jo chez bhi karanga wo chez hojaygi
 //mouseout mouseover ka parallel ha
 
-// btn1.addEventListener('click' , function(){
-//     console.log('hello world!')
-// })
+btn1.addEventListener('click' , function(){
+    console.log('hello world!')
+})
 
 
 // bubbling
@@ -430,8 +430,8 @@ console.log('hello Events!');
 // capturing ma hum isi chiz ko apna hisab sa change kardata ha
 
 
-// const ul = document.querySelector('#ul');
-// const about = document.querySelector('#about');
+const ul = document.querySelector('#ul');
+const about = document.querySelector('#about');
 
 // ul.addEventListener('click', function () {
 //     console.log('ul clicked')
@@ -441,7 +441,7 @@ console.log('hello Events!');
 //     console.log('about clicked')
 // } , false)
 
-// stopPropagation ka method sa hum ksi bhi chiz ka default behaviour ko change karsakta ha
+// stopPropagation ka method sa hum ksi bhi chiz ka default behaviour ko change karsakta ha preventDefault sa bhi wahi hota ha jo stopPropagation sa hota ha magar stopPropagation 'click' ka lia use hota ha || preventDefault 'submit' ka lia hota ha jo hum aksar input ka lia use karta ha
 
 // about.addEventListener('click', function (event) {
 //     event.stopPropagation();
@@ -450,7 +450,7 @@ console.log('hello Events!');
 
 //.target sa wo variable target hota ha
 //.tagName sa us chez ka nam ajata ha
-//.remove() sa wo chez remove ojati ha jis chez pa laga o
+//.remove() sa wo chez remove ho jati ha jis chez pa laga do
 
 
 // const ul1 = document.querySelector('.images');
@@ -522,7 +522,7 @@ console.log('hello Events!');
 
 console.log('hellow hoisting');
 //Hoisting
-// var hoisting support karta ha let || const hoisting support nahi karta
+// var hoisting support karta ha let || const ,let hoisting support nahi karta
 
 // console.log(usernames);
 // var usernames = 'abdullah';
@@ -541,16 +541,16 @@ console.log('hello arrow function');
 
 
 //nicha 2 normal function bana hua haa 
-// haseeb('world')
-// function haseeb(name) {
-//     console.log('hello', name);
-// }
+haseeb('world')
+function haseeb(name) {
+    console.log('hello', name);
+}
 
-// nicha wala function hoisting support nahi karta
-// const world = function (username) {
-//     console.log('hello world', username)
-// }
-// world('abdullah');
+// nicha wala function hoisting support nahi karta Q ka wo arrow function ha.
+const world = function (username) {
+    console.log('hello world', username)
+}
+world('abdullah');
 
 // let ebad=()=>{
 //     console.log('arrow');
@@ -588,6 +588,24 @@ console.log('hello arrow function');
 // }
 // obj.greetUser()
 // obj.greetUser2()
+
+
+
+
+console.log('hello localStorage');
+
+//localStorage ka data setitem sa  jata hai or jub huma usko get karna ho to getitem sa ata ha jub hum data bhajta ha to paihla hum key likhta ha or dubara ma value ,key yani ka kis nam sa data bhajna ha or value yani ka kia data bhajna ha
+// normaly value ko string ma likhta ha yani  ' ' lakin is ma hama patanahi chalta ka data kis form ma gia ha or jub hum koi variable ko localStorage ma bhajta ha to wo print hona ma masla karta ha isilia hum JSON.stringify lagata ha is sa data string ki form ma print hota ha
+
+let m = {
+    jawad: 'name',
+    age: 20,
+}
+localStorage.setItem('key,abba', m)
+localStorage.setItem('SendObject', JSON.stringify(m))
+
+// jub huma data ko get karna ho to getitem sa karta ha
+
 
 console.log('hello array loops');
 //1 for loop    array or object dono ma use ho sakta ha
@@ -652,10 +670,10 @@ function alpha(data) {
 }
 
 function get(callback) {
-    // Simulate an asynchronous operation using setTimeout
-    setTimeout(() => {
-        callback('jawad');
-    }, 1000);
+
+    // Simulate an synchronous operation 
+    callback('jawad');
+
 }
 
 // Pass alpha as a callback function to get
@@ -938,25 +956,24 @@ const products = [
     }
 ];
 
-// const electronics = products.filter(item=>{return item.category==='Electronics'})
-// console.log(electronics);  // is tarika sa hamara pas sirf products ma wo category ayieanga jo Electronics ki  
+const electronics = products.filter(item => { return item.category === 'Electronics' })
+console.log(electronics);  // is tarika sa hamara pas sirf products ma wo category ayieanga jo Electronics ki  
 
 // ksi bhi method ka uper 1 or method lagana chaining kahlati ha jaisa mana nicha filter ka method pa dubara .filter ka method call kia ha. ksi bhi method pa koi or method call karana chaining kahlati ha
 
-const electronics = products.filter(item => {
+const electronicsMainMain = products.filter(item => {
     return item.category === 'Electronics' && item.price > 100
 }).filter((item) => {
     return item.price < 200
 })
-console.log(electronics);
+console.log(electronicsMainMain);
 
 
 //nicha wala variable ma return ka key word is lia nahi lagay Q ka hum na apna arrow function ma  Scope yani {} nahi lagay. jub hum {} nahi lagata to return ka key word lagana zarory nahi hota.
 let electronicsmain = products.filter(item =>
     item.category === 'Electronics' && item.price > 100
-).filter((item) =>
-    item.price < 200
-)
+).filter(item =>
+    item.price < 200);
 console.log(electronicsmain);
 
 
@@ -973,7 +990,7 @@ console.log('Promise');
 //promise ka ander 1 callback function banta ha o apna ander 2 parameter receive karta ha first is resolve, second is reject 
 
 const experience = 5;
-const job = new Promise((resolve, reject) => {
+const exist = new Promise((resolve, reject) => {
     if (experience > 3) {
         console.log('accepted');
         resolve()
@@ -982,8 +999,8 @@ const job = new Promise((resolve, reject) => {
         reject()
     }
 })
-// nicha jo job ka nam ka variable bana ha is ka aga semicolome ';' nahi lagata errer ajayga or job.then.catch ko 1 line ma bhi liikhsakta ha magar ya bad practice ha
-job
+// nicha jo exist ka nam ka variable bana ha is ka aga semicolome ';' nahi lagata errer ajayga or exist.then.catch ko 1 line ma bhi liikhsakta ha magar ya bad practice ha
+exist
     .then(() => {
         console.log('then');
     })
@@ -991,7 +1008,7 @@ job
         console.log('catch');
     })
 
-// job.then(() => {console.log('then');}).catch(() => {console.log('catch');})
+// exist.then(() => {console.log('then');}).catch(() => {console.log('catch');})
 
 
 // is tarika sa promise kam karta ha or upper wala promise ma hamna abhi synchronous kam kara ha asynchronous kam nahi kara
@@ -1042,22 +1059,21 @@ console.log('hello API');
 // axious ka script ka link hamasha app.js ka uper lagainga HTML ma
 
 // hamara pas jo data API ka through ata ha wo console ma object kia form ma show hota ha 
-let API = document.querySelector('.main') 
+let API = document.querySelector('.main')
 axios('https://fakestoreapi.com/products')
-.then((res)=>{
-    console.log(res.data);
-res.data.map((item)=>{
-    API.innerHTML+=`
+    .then((res) => {
+        console.log(res.data);
+        res.data.map((item) => {
+            API.innerHTML += `
     <h1>Title: ${item.title}</h1>
     <img  width="200"  src="${item.image}"  alt="product"/>
     <h1>Price: ${item.price}</h1>
     <hr/>
-    `
-})
-})
-.catch((err)=>{
-console.log(err);
-})
+    `})
+    })
+    .catch((err) => {
+        console.log(err);
+    })
 
 
 
