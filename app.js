@@ -546,16 +546,16 @@ function haseeb(name) {
     console.log('hello', name);
 }
 
-// nicha wala function hoisting support nahi karta Q ka wo arrow function ha.
+// nicha wala function hoisting support nahi karta 
 const world = function (username) {
     console.log('hello world', username)
 }
-world('abdullah');
+world('IT');
 
-// let ebad=()=>{
-//     console.log('arrow');
-// }
-// ebad()
+let ebad=()=>{
+    console.log('arrow');
+}
+ebad()
 
 // rar =()=>{
 //     console.log('arrow without variable');
