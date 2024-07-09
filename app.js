@@ -1,4 +1,4 @@
-// console.log("hello string method");
+console.log("hello string method");
 
 // toLowerCase  book ma haga
 // toUpperCase  book ma haga
@@ -13,12 +13,12 @@
 
 
 const fruits = ['apple', 'banana', 'orange', 'watermelon', 'guawa'];
-console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradaga or 3 ko bhi shamil kr ka agay ki array delete krdaga
+console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradaga or indexno 3 ko bhi shamil kr ka agay ki array delete krdaga
 // console.log(fruits.indexOf('appleesdadsd'));// indexof ma gagr hum koi bhi chez string ma dalanga agar wo chez array ma exist krti ha to index number batada ga or wo chez array ma nahi ha to -1 agay ga
 // console.log(fruits.includes('watermelon'));
 
-// const username = 'Muhammad Abdullah';
-// console.log(username.toLocaleUpperCase())
+const username = 'Muhammad Abdullah';
+console.log(username.toUpperCase())
 // console.log(username[2]);
 // console.log(username.length);// length string ma space ko bhi count krta ha
 // console.log(username.slice(3 , 7));
@@ -320,7 +320,7 @@ let array = {
 //     email: 'akterjawad566@gmail.com',
 // }
 // delete obj.age
-// obj.email = 'haseeburrehman'
+// obj.email = 'haseeburrehman';
 // console.log(obj);
 
 
@@ -409,7 +409,7 @@ console.log('hello Events!');
 
 const btn1 = document.querySelector('#btn');
 
-// btn.addEventListener('click' , hello);//jo kam hum HTML ma on click ka throw karaha tha wohi kam hum JavaScript ma addEventListener ka throw karta ha or on click bad practice ha ,addEventListener ma 3 parameter receive hota ha 3 bad ma dakhanga first ma string ma click||submit||change||mouseover||mouseout or second ma function ka sirf name yani function ka reference pass karna ya phir pura function banado or third parameter ma sirf boolean hota ha or by default false hota ha
+// btn1.addEventListener('click' , hello);//jo kam hum HTML ma on click ka throw karaha tha wohi kam hum JavaScript ma addEventListener ka throw karta ha or on click bad practice ha ,addEventListener ma 3 parameter receive hota ha 3 bad ma dakhanga first ma string ma click||submit||change||mouseover||mouseout or second ma function ka sirf name yani function ka reference pass karna ya phir pura function banado or third parameter ma sirf boolean hota ha or by default false hota ha
 
 
 // click mouse ka click pa kam karta ha.
@@ -441,7 +441,7 @@ const about = document.querySelector('#about');
 //     console.log('about clicked')
 // } , false)
 
-// stopPropagation ka method sa hum ksi bhi chiz ka default behaviour ko change karsakta ha preventDefault sa bhi wahi hota ha jo stopPropagation sa hota ha magar stopPropagation 'click' ka lia use hota ha || preventDefault 'submit' ka lia hota ha jo hum aksar input ka lia use karta ha
+// stopPropagation ka method sa hum ksi bhi chiz ka default behaviour ko change karsakta ha preventDefault sa bhi wahi hota ha jo stopPropagation sa hota ha magar stopPropagation 'click' ka lia use hota ha || preventDefault 'submit' ka lia use hota ha jo hum aksar input ka lia use karta ha
 
 // about.addEventListener('click', function (event) {
 //     event.stopPropagation();
@@ -520,7 +520,7 @@ const about = document.querySelector('#about');
 //     console.log(password.value)
 // })
 
-console.log('hellow hoisting');
+console.log('hello hoisting');
 //Hoisting
 // var hoisting support karta ha let || const ,let hoisting support nahi karta
 
@@ -531,7 +531,7 @@ console.log('hellow hoisting');
 
 // var usernames;
 
-console.log('hello IIFE ||Immediately Invoked Function Expression function');
+console.log('hello IIFE || Immediately Invoked Function Expression function');
 
 // (function IIFE(){
 //     console.log('hello world');
@@ -541,8 +541,8 @@ console.log('hello arrow function');
 
 
 //nicha 2 normal function bana hua haa 
-haseeb('world')
-function haseeb(name) {
+atif('world')
+function atif(name) {
     console.log('hello', name);
 }
 
@@ -561,6 +561,8 @@ ebad()
 //     console.log('arrow without variable');
 // } 
 // rar()
+
+// upper jis tarha arrow function bana ha is tarha ban jata ha magar ya tarika sahi nahi ha
 
 //arrow function ma agar aap sirf single parameter recetive karta ha to ()bracket dalna ki zarorat nahi ha. 1 sa zada parameter recetive karta ha ya agar parameter receive nahi karta to bhi () dalna ha agar ham single console chalata ha to {} dalna ki zarorat nahi ha or return ki bhi zarorat nahi ha.agar aap na {} dal dia to return lazmi karna paraga agar arrow function ma aap {} lagata ha to wo statement kahlati ha or baghir {} ka kuch kara to wo expression kahlati ha
 
@@ -594,7 +596,7 @@ ebad()
 
 console.log('hello localStorage');
 
-//localStorage ka data setitem sa  jata hai or jub huma usko get karna ho to getitem sa ata ha jub hum data bhajta ha to paihla hum key likhta ha or dubara ma value ,key yani ka kis nam sa data bhajna ha or value yani ka kia data bhajna ha
+//localStorage ka data setitem sa  jata hai or jub huma usko get karna ho to getitem sa karta ha or data ata ha jub hum data bhajta ha to paihla hum key likhta ha or dubara ma value ,key yani ka kis nam sa data bhajna ha or value yani ka kia data bhajna ha
 // normaly value ko string ma likhta ha yani  ' ' lakin is ma hama patanahi chalta ka data kis form ma gia ha or jub hum koi variable ko localStorage ma bhajta ha to wo print hona ma masla karta ha isilia hum JSON.stringify lagata ha is sa data string ki form ma print hota ha
 
 let m = {
