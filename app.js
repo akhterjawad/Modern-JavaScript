@@ -371,6 +371,40 @@ for (let key in haseeb) {
 
 
 
+
+const y = {
+    name: "Harry",
+    role: "Js Developer",
+    exp: 30,
+    show: function () {
+        // Inside this function, `this` is = `x` in this object
+        setTimeout(function () {
+            // Inside this function, `this` refers to the global object (window in browsers)
+            console.log(`The name is ${this.name}\nThe role is ${this.role}`);
+        }, 2000);
+    }
+}
+
+y.show(); // This will log undefined for both name and role because `this` is not `x` inside setTimeout
+
+
+const o = {
+    name: "Harry",
+    role: "Js Developer",
+    exp: 30,
+    show: function () {
+        let that = this
+        console.log(this)
+        setTimeout(function () {
+            console.log(`The name is ${that.name}\nThe role is ${that.role}`)
+        }, 2000)
+    }
+}
+o.show()
+
+
+
+
 // const username = document.querySelector('#name');
 // const age = document.querySelector('#age');
 // const city = document.querySelector('#city');
@@ -418,7 +452,7 @@ const btn1 = document.querySelector('#btn');
 //mouseover sa jub hum ksi chez par just mouse laker jata ha to usma jo chez bhi karanga wo chez hojaygi
 //mouseout mouseover ka parallel ha
 
-btn1.addEventListener('click' , function(){
+btn1.addEventListener('click', function () {
     console.log('hello world!')
 })
 
@@ -552,10 +586,19 @@ const world = function (username) {
 }
 world('IT');
 
-let ebad=()=>{
+let ebad = () => {
     console.log('arrow');
 }
 ebad()
+
+let www = () => `Hi`;
+console.log(www());
+
+let n = p => `${p} hello`;
+console.log(n('jawad'));
+
+let hello = () => "Hello World!";
+console.log(hello());
 
 // rar =()=>{
 //     console.log('arrow without variable');
@@ -591,6 +634,20 @@ ebad()
 // obj.greetUser()
 // obj.greetUser2()
 
+
+const x = {
+    name: "Harry",
+    role: "Js Developer",
+    exp: 30,
+    show: function () {
+        let that = this
+        console.log(this)
+        setTimeout(function () {
+            console.log(`The name is ${that.name}\nThe role is ${that.role}`)
+        }, 2000)
+    }
+}
+x.show()
 
 
 
