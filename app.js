@@ -635,21 +635,6 @@ console.log(hello());
 // obj.greetUser2()
 
 
-const x = {
-    name: "Harry",
-    role: "Js Developer",
-    exp: 30,
-    show: function () {
-        let that = this
-        console.log(this)
-        setTimeout(function () {
-            console.log(`The name is ${that.name}\nThe role is ${that.role}`)
-        }, 2000)
-    }
-}
-x.show()
-
-
 
 console.log('hello localStorage');
 
@@ -714,9 +699,11 @@ for (const key in ObjectMain) {
 //1 callback function
 //2 heigh order function
 
-//1 callback function wo function hota ha jo ksi function ka ander as an argument bhajta ha.callback function ma 3 parameter receive karta ha paihly ma array ka items dosra ma unka indexNo or 3 ma poori ki poori array
+//1 callback function wo function hota ha jo ksi function ka ander as an argument bhajta ha.
 
 //2 heigh order function wo function hota ha jo ass an argument apna ander call back function lata ha receive karta ha usa heigh order function katha ha
+
+
 ArrayMain.forEach(function (item, index, ArrayMain) {
     console.log(item, index, ArrayMain);
 })
@@ -744,6 +731,9 @@ get(alpha);
 // alpha is passed as the callback when calling get.
 
 
+// forEach,map,filter in sub ma 3 parameter receive karta ha paihly ma array ka items dosra ma unka indexNo or 3 ma poori ki poori array
+
+
 ArrayMain.forEach((main) => {
     console.log(main);
     div.innerHTML += `
@@ -757,6 +747,19 @@ ArrayMain.map((items, index) => {
     console.log(items);
     console.log(index);
 })
+
+
+
+let digits = [1, 2, 3, 4, 5];
+
+let method = digits.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0);
+
+console.log(method); // Output: 15
+
+
+
 
 let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -1015,7 +1018,7 @@ const products = [
     }
 ];
 
-const electronics = products.filter(item => { return item.category === 'Electronics' })
+const electronics = products.filter(item =>  item.category === 'Electronics' )
 console.log(electronics);  // is tarika sa hamara pas sirf products ma wo category ayieanga jo Electronics ki  
 
 // ksi bhi method ka uper 1 or method lagana chaining kahlati ha jaisa mana nicha filter ka method pa dubara .filter ka method call kia ha. ksi bhi method pa koi or method call karana chaining kahlati ha
