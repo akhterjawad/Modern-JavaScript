@@ -753,11 +753,17 @@ ArrayMain.map((items, index) => {
 let digits = [1, 2, 3, 4, 5];
 
 let method = digits.reduce((accumulator, currentValue) => {
-  return accumulator + currentValue;
-}, 0);
-
+    return accumulator + currentValue;
+}, 0);// 0 is the initial value for accumulator
 console.log(method); // Output: 15
 
+
+let arr3 = [1, 2, 3, 5, 2, 1]
+const reduce_func = (h1, h2) => {
+    return h1 + h2
+}
+let newarr3 = arr3.reduce(reduce_func)
+console.log(newarr3)
 
 
 
@@ -1018,7 +1024,7 @@ const products = [
     }
 ];
 
-const electronics = products.filter(item =>  item.category === 'Electronics' )
+const electronics = products.filter(item => item.category === 'Electronics')
 console.log(electronics);  // is tarika sa hamara pas sirf products ma wo category ayieanga jo Electronics ki  
 
 // ksi bhi method ka uper 1 or method lagana chaining kahlati ha jaisa mana nicha filter ka method pa dubara .filter ka method call kia ha. ksi bhi method pa koi or method call karana chaining kahlati ha
