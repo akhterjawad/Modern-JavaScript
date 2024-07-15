@@ -10,12 +10,21 @@ console.log("hello string method");
 // replace  book ma haga
 // replaceall  book ma haga
 // split
+// trim
 
 
-const fruits = ['apple', 'banana', 'orange', 'watermelon', 'guawa'];
+const fruits = 'AppleBanana';
 console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradaga or indexno 3 ko bhi shamil kr ka agay ki array delete krdaga
 // console.log(fruits.indexOf('appleesdadsd'));// indexof ma gagr hum koi bhi chez string ma dalanga agar wo chez array ma exist krti ha to index number batada ga or wo chez array ma nahi ha to -1 agay ga
 // console.log(fruits.includes('watermelon'));
+
+
+// trim ka function bilkul start ka or end ka space yani white space kha tam kardata ha
+let originalString = "   Hello,    World!   ";
+let trimmedString = originalString.trim().length;
+console.log("Original string: '" + originalString + "'");
+console.log("Trimmed string: '" + trimmedString + "'");
+
 
 const username = 'Muhammad Abdullah';
 console.log(username.toUpperCase())
