@@ -77,7 +77,7 @@ console.log(username.toUpperCase())
 // }
 
 
-// console.log("hello number method");
+console.log("hello number method");
 
 // Number // book ma haga
 // parseInt() // book ma haga
@@ -159,18 +159,14 @@ console.log(username.toUpperCase())
 
 // console.log("hello Math method");
 
-
 // ceil()  book ma ha
 // floor()  book ma ha
 // round()  book ma ha
 // random()  book ma ha
 // trunc()
 
-
-
 // ceil ma value point ma ho to us value ka integer ma'1+' krdaga or point ka bad ki value nahi daga
 // floor ma value point ma ho to us value ka integer ma kuch nahi krdaga or point ka bad ki value nahi daga
-
 
 
 let e = Math.ceil(2.021837)
