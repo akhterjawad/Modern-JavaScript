@@ -17,8 +17,8 @@ console.log(fruits.slice(1, 3))// slice ma agar hum (1,3) dalanga to 0 ko uradag
 // console.log(fruits.indexOf('appleesdadsd'));// indexof ma gagr hum koi bhi chez string ma dalanga agar wo chez array ma exist krti ha to index number batada ga or wo chez array ma nahi ha to -1 agay ga
 // console.log(fruits.includes('watermelon'));
 
-const username = 'Muhammad Abdullah';
-console.log(username.toUpperCase())
+// const username = 'Muhammad Abdullah';
+// console.log(username.toUpperCase())
 // console.log(username[2]);
 // console.log(username.length);// length string ma space ko bhi count krta ha
 // console.log(username.slice(3 , 7));
@@ -48,18 +48,18 @@ console.log(username.toUpperCase())
 
 
 
-// const username = 'Muhammad Abdullah';
-// const name = 'usman';
-// console.log(username[4]);
-// console.log(username.charAt(4));
-// console.log(username.indexOf('x'));
-// console.log(username.indexOf('A'));
-// console.log(username.indexOf('a'));
-// console.log(username.lastIndexOf('h'));
-// console.log(username.split('a'));
-// console.log(username.length - 1);
-// console.log(username[username.length - 1]);
-// console.log('hello'.concat(' world'));
+const username = 'Muhammad Abdullah';
+const name = 'usman';
+console.log(username[4]);
+console.log(username.charAt(4));
+console.log(username.indexOf('x'));
+console.log(username.indexOf('A'));
+console.log(username.indexOf('a'));
+console.log(username.lastIndexOf('h'));
+console.log(username.split('a'));
+console.log(username.length - 1);
+console.log(username[username.length - 1]);
+console.log('hello'.concat(' world'));
 
 
 
@@ -227,11 +227,11 @@ let e = Math.ceil(2.021837)
 
 
 let currentDateTime = new Date();
-console.log(currentDateTime);//is tarika sa hum computer ka current day,date,time,time zone ko pata laga saktaha
+// console.log(currentDateTime);//is tarika sa hum computer ka current day,date,time,time zone ko pata laga saktaha
 
-let currentDate = new Date('10/2/2024');
+// let currentDate = new Date('10/2/2024');
 // let currentDate = new Date(' January 10 2010');
-console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsakta ha
+// console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsakta ha
 
 // let currentDate = new Date().toDateString();
 // console.log(currentDate);//is tarika sa hum curret day or date maloom karsakta ha
@@ -246,7 +246,7 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 
 
 
-// console.log(currentDate.toLocaleTimeString())
+// console.log(currentDateTime.toLocaleTimeString())
 // let dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 // console.log(currentDate.getDay());
 // console.log(dayNames[currentDate.getDay()]);
@@ -264,11 +264,11 @@ console.log(currentDate);//is tarika sa hum apni date bhi dal ka usa fixed karsa
 
 
 
-// const hyderabadi = new Date('May 26 , 2004').getTime();
-// const currentDate = new Date().getTime();
-// const remainingMilliseconds = currentDate - hyderabadi;
+const hyderabadi = new Date('May 26 , 2004').getTime();
+const currentDate = new Date().getTime();
+const remainingMilliseconds = currentDate - hyderabadi;
 
-// console.log(remainingMilliseconds / 1000 / 60 / 60 /24 / 30 / 12);
+console.log(remainingMilliseconds / 1000 / 60 / 60 / 24 / 30 / 12);
 
 
 
@@ -332,7 +332,7 @@ for (let key in ahmed) {
 
 let haseeb = {
     firstnames: 'jawad',
-    lastnames: 'jawad',
+    lastnames: 'akhter',
     age: '10,',
     email: 'akterjawad566@gmail.com'
 }
@@ -643,6 +643,8 @@ let m = {
 }
 localStorage.setItem('key,abba', m)
 localStorage.setItem('SendObject', JSON.stringify(m))
+let gets = JSON.parse(localStorage.getItem('SendObject'))
+console.log(gets);
 
 // jub huma data ko get karna ho to getitem sa karta ha
 
@@ -1153,3 +1155,31 @@ axios('https://fakestoreapi.com/products')
 
 
 
+
+
+
+
+
+{
+    let x = 10;
+    const r = 20;   
+     var h4 = 40;
+
+    console.log(x); // 10
+    console.log(r); // 20
+    console.log(h4); // 40
+}
+console.log(x); // ReferenceError: x is not defined
+console.log(r); // ReferenceError: y is not defined
+console.log(h4); // 40
+
+
+
+{
+    let h1 = 'hello';
+    const h2 = 'world';
+    var h3 = 'block';
+}
+console.log(h1); // ReferenceError: h1 is not defined
+console.log(h2); // ReferenceError: h2 is not defined
+console.log(h3); // block
