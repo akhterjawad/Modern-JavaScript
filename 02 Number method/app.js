@@ -1,11 +1,11 @@
 
 console.log("hello number method");
 
-// Number // book ma haga
-// parseInt() // book ma haga
-// parseFloat() // book ma haga
-// toString() // book ma haga
-// toFixed() // book ma haga
+// Number 
+// parseInt() 
+// parseFloat() 
+// toString() 
+// toFixed() 
 // isfinite()
 // isinteger()
 
@@ -38,7 +38,7 @@ console.log("hello number method");
 // let d = "years 89";
 // let d = "89.47";
 // let d = "089";// browzer pa bilawaja ka yani jo bilkul start ma laga hua ho wo zero show nahi hota Q ka us zero ki koi value nahi hoti
-// let num3 = parseInt(d);//parseInt ka method ma ('99 88') is tarha ki yani jub digits ka bich ma space ho to ya start vali value data ha magar simple number method ma nahi data or jub hum is ka bitch ka space khatam krdanga ('9988') to ya puri value return kraga or basicly ya integer return krta ha yani point sa paihly vali 
+// let num3 = parseInt(d);//parseInt ka method ma ('99 88') is tarha ki yani jub digits ka bich ma space ho to ya start vali value data ha magar simple number method ma nahi data or jub hum is ka bitch ka space khatam krdanga ('9988') to ya puri value return kraga or basicly ya integer return krta ha yani point sa paihly vali
 // let num3 = Number(d);//100
 // console.log(num3);
 // document.write(num3);
@@ -67,7 +67,7 @@ console.log("hello number method");
 
 // let v = 22.854864920;
 // let num6 = v.toFixed(24)
-// let num6 = v.toFixed(2)//is ma pori value ati ha bs point (.) ka bad utna hi digit ata ha jitna hum () ma dalta ha 
+// let num6 = v.toFixed(2)//is ma pori value ati ha bs point (.) ka bad utna hi digit ata ha jitna hum () ma dalta ha
 // console.log(num6);
 
 

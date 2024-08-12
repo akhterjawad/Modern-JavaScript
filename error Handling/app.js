@@ -16,9 +16,9 @@ console.log('Error handling/try catch');
 
 console.log('hasnain');
 try {
-    console.log(jawad);
+  console.log(jawad);
 } catch (error) {
-    console.log(error);
+  console.log(error);
 }
 console.log('nana');
 
@@ -28,64 +28,55 @@ console.log('nana');
 
 
 function divide(a, b) {
-    if (b === 0) {
-      throw new Error("Cannot divide by zero");
-    }
-    return a / b;
+  if (b === 0) {
+    throw new Error("Cannot divide by zero");
   }
-  
-  function performDivision() {
-    try {
-      const result = divide(10, 0);
-      console.log("Result:", result);
-    } catch (error) {
-      console.error("Error:", error.message);
-    }
+  return a / b;
+}
+
+function performDivision() {
+  try {
+    const result = divide(10, 0);
+    console.log("Result:", result);
+  } catch (error) {
+    console.error("Error:", error.message);
   }
-  
-  performDivision();
+}
 
-  
-
+performDivision();
 
 
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject(new Error("Failed to fetch data"));
+    }, 1000);
+  });
+}
 
-  function fetchData() {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        reject(new Error("Failed to fetch data"));
-      }, 1000);
-    });
+async function getData() {
+  try {
+    const data = await fetchData();
+    console.log("Data:", data);
+  } catch (error) {
+    console.error("Error:", error.message);
   }
-  
-  async function getData() {
-    try {
-      const data = await fetchData();
-      console.log("Data:", data);
-    } catch (error) {
-      console.error("Error:", error.message);
-    }
+}
+
+getData();
+
+
+function parseJSON(jsonString) {
+  try {
+    const parsedData = JSON.parse(jsonString);
+    console.log("Parsed Data:", parsedData);
+  } catch (error) {
+    console.error("Invalid JSON:", error.message);
   }
-  
-  getData();
+}
 
-  
+const jsonString = '{"name": "John", "age": 30}';
+parseJSON(jsonString);
 
-
-
-
-  function parseJSON(jsonString) {
-    try {
-      const parsedData = JSON.parse(jsonString);
-      console.log("Parsed Data:", parsedData);
-    } catch (error) {
-      console.error("Invalid JSON:", error.message);
-    }
-  }
-  
-  const jsonString = '{"name": "John", "age": 30}';
-  parseJSON(jsonString);
-  
-  const invalidJsonString = '{"name": "John", "age": 30';
-  parseJSON(invalidJsonString);
-  
+const invalidJsonString = '{"name": "John", "age": 30';
+parseJSON(invalidJsonString);

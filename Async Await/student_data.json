@@ -1,9 +1,12 @@
 {
-    "name": "John Doe",
-    "age": 20,
-    "major": "Computer Science",
-    "gpa": 3.8,
-    "courses": ["Algorithms", "Data Structures", "Web Development"],
-    "isEnrolled": true
-  }
-  
+  "name": "John Doe",
+  "age": 20,
+  "major": "Computer Science",
+  "gpa": 3.8,
+  "courses": [
+    "Algorithms",
+    "Data Structures",
+    "Web Development"
+  ],
+  "isEnrolled": true
+}

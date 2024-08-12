@@ -1,9 +1,9 @@
 // console.log("hello Math method");
 
-// ceil()  book ma ha
-// floor()  book ma ha
-// round()  book ma ha
-// random()  book ma ha
+// ceil()  
+// floor()  
+// round()  
+// random()  
 // trunc()
 
 // ceil ma value point ma ho to us value ka integer ma'1+' krdaga or point ka bad ki value nahi daga

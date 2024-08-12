@@ -1,14 +1,14 @@
 console.log("hello string method");
 
-// toLowerCase  book ma haga
-// toUpperCase  book ma haga
-// length  book ma haga
-// charAt  book ma haga
-// indexOf  book ma haga
-// lastindexof  book ma haga
-// slice  book ma haga
-// replace  book ma haga
-// replaceall  book ma haga
+// toLowerCase  
+// toUpperCase  
+// length  
+// charAt  
+// indexOf  
+// lastindexof  
+// slice  
+// replace  
+// replaceall  
 // split
 
 
@@ -43,7 +43,7 @@ console.log(username.toUpperCase())
 
 
 // console.log(message.replace('Ali' , 'ABDULLAH'));//is sa string ma pahli value ko dusri value sa change krdata ha sirf paihly lafz ko
-// console.log(message.replaceAll('Ali' , 'ABDULLAH'));// is ma bhi replace ki tarha kam hota ha bs ya sara words ko change krdata ha jo braket ma ho 
+// console.log(message.replaceAll('Ali' , 'ABDULLAH'));// is ma bhi replace ki tarha kam hota ha bs ya sara words ko change krdata ha jo braket ma ho
 
 
 
